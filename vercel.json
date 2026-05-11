@@ -1,0 +1,13 @@
+{
+  "functions": {
+    "src/app/dashboard/search/page.tsx": {
+      "maxDuration": 300
+    },
+    "src/app/api/runs/start/route.ts": {
+      "maxDuration": 300
+    },
+    "src/app/runs/start/route.ts": {
+      "maxDuration": 300
+    }
+  }
+}
