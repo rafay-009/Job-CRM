@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { BarChart3, Briefcase, History, LogOut, Search, Shield, Table2 } from "lucide-react";
+import { BarChart3, Briefcase, History, Link2, LogOut, Search, Shield, Table2 } from "lucide-react";
 import { createClient } from "@/lib/supabase/browser";
 import logo from "@/lib/logo.png";
 import { cn } from "@/lib/utils";
@@ -14,6 +14,7 @@ const workerLinks = [{ href: "/dashboard", label: "Job Links", icon: Briefcase }
 const scraperLinks = [
   { href: "/dashboard", label: "Dashboard", icon: BarChart3 },
   { href: "/dashboard/search", label: "Scraper", icon: Search },
+  { href: "/dashboard/manual-links", label: "Adding Links Manually", icon: Link2 },
   { href: "/dashboard/results", label: "Results", icon: Table2 },
   { href: "/dashboard/history", label: "History", icon: History },
 ];

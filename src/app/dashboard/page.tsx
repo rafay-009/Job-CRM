@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Briefcase, CalendarDays, CheckCircle2, Clock, ExternalLink, Search, TrendingUp } from "lucide-react";
+import { Briefcase, CalendarDays, CheckCircle2, Clock, ExternalLink, Link2, Search, TrendingUp } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
 import { Button } from "@/components/ui/button";
 import { DataTable } from "@/components/ui/data-table";
@@ -189,12 +189,20 @@ async function ScraperDashboard() {
         title="Scraper Dashboard"
         description="Run the scraper and monitor the jobs you have added for workers."
         action={
-          <Link href="/dashboard/search">
-            <Button>
-              <Search className="h-4 w-4" />
-              New scrape
-            </Button>
-          </Link>
+          <div className="flex flex-wrap gap-2">
+            <Link href="/dashboard/manual-links">
+              <Button variant="secondary">
+                <Link2 className="h-4 w-4" />
+                Adding Links Manually
+              </Button>
+            </Link>
+            <Link href="/dashboard/search">
+              <Button>
+                <Search className="h-4 w-4" />
+                New scrape
+              </Button>
+            </Link>
+          </div>
         }
       />
 
