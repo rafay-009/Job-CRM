@@ -1,6 +1,5 @@
 node_modules
 .next
-.env
 .env*.local
 .env.vercel
 out
@@ -14,3 +13,4 @@ yarn-error.log*
 
 __pycache__/
 .pytest_cache/
+config.bat
